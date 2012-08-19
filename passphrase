@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import random
 
-// This works for ArchLinux. It is not universal. Change the next line for your flavor of *nix.
+# This works for ArchLinux. It is not universal. Change the next line for your flavor of *nix.
 DICT = "/usr/share/dict/cracklib-small"
 words = random.sample(list(open(DICT)), 12)
 phrase = ""
