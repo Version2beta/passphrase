@@ -1,5 +1,4 @@
-passphrase
-==========
+# passphrase
 
 Simple passphrase generator apropos http://xkcd.com/936/. Selects 12 random words from the configured dictionary. 
 
@@ -14,4 +13,13 @@ Here are some of my favorite example passphrases:
 * dual Arabian iotas
 * Windsor's armchair Typists
 
-Current version requires a path to the dictionary, and expects to be placed in the path and executable.
+## Installation
+
+```pip install passphrase``` or ```easy_install passphrase```
+
+## Usage
+
+$ passphrase
+bred Volstead Toefl Transgression'S Fledge murk peerless plot's quoted mushy Granulate travelers 
+
+Pick three or four words in any order you like. Make slight variations. "Traveler's peerless transgressions" or "Fledge quoted murk's plot" might be good choices.
