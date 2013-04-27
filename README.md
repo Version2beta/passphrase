@@ -20,6 +20,6 @@ Here are some of my favorite example passphrases:
 ## Usage
 
 $ passphrase
-bred Volstead Toefl Transgression'S Fledge murk peerless plot's quoted mushy Granulate travelers 
 
-Pick three or four words in any order you like. Make slight variations. "Traveler's peerless transgressions" or "Fledge quoted murk's plot" might be good choices.
+
+
