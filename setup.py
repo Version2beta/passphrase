@@ -1,8 +1,9 @@
 from distutils.core import setup
+import passphrase
 
 setup(
     name='passphrase',
-    version='0.1.1',
+    version='0.1.2',
     author='Rob Martin @version2beta',
     author_email='rob@version2beta.com',
     packages=['passphrase'],
