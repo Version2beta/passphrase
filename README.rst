@@ -39,6 +39,12 @@ Specify a language other than English (en)::
     $ passphrase -l fr
     anniversaire caméras chan foie foutez nazi organisé pluie ray revue stewart tonne
 
+    $ passphrase -l ar
+    أيجب اخرجي الجبل الرقم الشفرة القلب ركوب ريكو سادة شـيء محلي معى
+
+    $ passphrase -l he
+    איום איזור הזמין הטבע הצלחה התיבה התכוונו ובסוף וזה כל מצלמת סוגים
+
 See available languages::
 
     $ passphrase -L
