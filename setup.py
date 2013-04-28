@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='passphrase',
-    version='0.0.7',
+    version='0.1.0',
     author='Rob Martin @version2beta',
     author_email='rob@version2beta.com',
     packages=['passphrase'],
@@ -10,10 +10,11 @@ setup(
     url='http://pypi.python.org/pypi/passphrase/',
     license='LICENSE.txt',
     description='List a series of words for selection of a secure and rememberable passphrase. Choose from many different languages.',
-    long_description=open('README.rst').read(),
+    long_description=open('README.txt').read(),
     install_requires=[],
     package_data={
         '': ['*.dist'],
+        'passphrase': ['dictionaries/*.txt'],
       },
     entry_points={
         'console_scripts': [
