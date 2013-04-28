@@ -20,7 +20,10 @@ def available_languages():
   return sorted(langs)
 
 def generate(lang, num):
-  return [x.strip() for x in sorted(random.sample(list(open('%s/dictionaries/%s.txt' % (_dir, lang))), num))]
+  try:
+    return [x.strip() for x in sorted(random.sample(list(open('%s/dictionaries/%s.txt' % (_dir, lang))), num))]
+  except:
+    return ["Dictionary ", lang, " not found. Use the '-L' flag to list available dictionaries."]
 
 def main():
   parser = argparse.ArgumentParser()
