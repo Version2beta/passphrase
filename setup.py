@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='passphrase',
-    version='0.0.6',
+    version='0.0.7',
     author='Rob Martin @version2beta',
     author_email='rob@version2beta.com',
     packages=['passphrase'],
