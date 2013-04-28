@@ -17,7 +17,9 @@ Here are some of my favorite example passphrases:
 Installation
 ____________
 
-``pip install passphrase`` or ``easy_install passphrase``
+``pip install passphrase``
+
+Installation will place an executable in /usr/bin, plus provide the passphrase API for your Python programming pleasure.
 
 Usage
 _____
