@@ -1,4 +1,5 @@
-# passphrase
+passphrase
+----------
 
 Simple passphrase generator apropos http://xkcd.com/936/. Selects 12 random words from the configured dictionary. 
 
@@ -13,11 +14,13 @@ Here are some of my favorite example passphrases:
 * dual Arabian iotas
 * Windsor's armchair Typists
 
-## Installation
+Installation
+____________
 
 ```pip install passphrase``` or ```easy_install passphrase```
 
-## Usage
+Usage
+_____
 
 Basic usage:
 
