@@ -17,37 +17,29 @@ Here are some of my favorite example passphrases:
 Installation
 ____________
 
-```pip install passphrase``` or ```easy_install passphrase```
+``pip install passphrase`` or ``easy_install passphrase``
 
 Usage
 _____
 
-Basic usage:
+Basic usage::
 
-```
-$ passphrase
-brain dandy deserve foundation house identified insisted iran paris regiment truly villagers
-```
+    $ passphrase
+    brain dandy deserve foundation house identified insisted iran paris regiment truly villagers
 
-Specify the number of results:
+Specify the number of results::
 
-```
-$ passphrase -n 3
-chair charley slept
-```
+    $ passphrase -n 3
+    chair charley slept
 
-Specify a language other than English (en):
+Specify a language other than English (en)::
 
-```
-$ passphrase -l fr
-anniversaire caméras chan foie foutez nazi organisé pluie ray revue stewart tonne
-```
+    $ passphrase -l fr
+    anniversaire caméras chan foie foutez nazi organisé pluie ray revue stewart tonne
 
-See available languages:
+See available languages::
 
-```
-$ passphrase -L
-ar bg cs da de el en es et fa fi fr he hr hu id it lt lv mk nl no pl pt pt_br ru sk sl sq sr-Cyrl sr-Latn sv tr ur zh
-```
+    $ passphrase -L
+    ar bg cs da de el en es et fa fi fr he hr hu id it lt lv mk nl no pl pt pt_br ru sk sl sq sr-Cyrl sr-Latn sv tr ur zh
 
 
