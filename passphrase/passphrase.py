@@ -1,12 +1,37 @@
 #!/usr/bin/python
+import argparse
+from glob import glob
 import random
+import os.path
+from contextlib import contextmanager
 
-# This works for ArchLinux. It is not universal. Change the next line for your flavor of *nix.
-DICT = "/usr/share/dict/cracklib-small"
-words = random.sample(list(open(DICT)), 12)
-phrase = ""
-for word in words:
-	if (random.choice((True, False))):
-		word = word.title()
-	phrase = phrase + word.rstrip() + " "
-print phrase
+@contextmanager
+def cd(path):
+  old_dir = os.getcwd()
+  os.chdir(path)
+  yield
+  os.chdir(old_dir)
+
+_dir = os.path.dirname(os.path.abspath(__file__))
+
+def available_languages():
+  with cd(_dir + "/dictionaries/"):
+    langs = list(n.replace(".txt", "") for n in glob("*.txt"))
+  return sorted(langs)
+
+def generate(lang, num):
+  return [x.strip() for x in sorted(random.sample(list(open('%s/dictionaries/%s.txt' % (_dir, lang))), num))]
+
+def main():
+  parser = argparse.ArgumentParser()
+  parser.add_argument('-l', '--language', default = "en", help = "Show results from which language")
+  parser.add_argument('-L', '--list', action = "store_true", help = "Show available languages")
+  parser.add_argument('-n', '--number', type = int, default = 12, help = "Number of results from which to choose")
+  args = parser.parse_args()
+  if args.list:
+    print " ".join(available_languages())
+  else:
+    print " ".join(generate(args.language, args.number))
+
+if __name__ == "__main__":
+  main()
